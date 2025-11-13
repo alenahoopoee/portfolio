@@ -21,11 +21,11 @@
         border-radius: rem(50);
 
         @include tablet {
-            background-image: url('../../images/projects/bg-tablet.jpg');
+            background-image: url('../images/projects/bg-tablet.jpg');
         }
 
         @include mobile {
-            background-image: url('../../images/projects/bg-mobile.jpg');
+            background-image: url('../images/projects/bg-mobile.jpg');
         }
     }
 

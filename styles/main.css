@@ -1108,12 +1108,12 @@ button[aria-label]::before {
 }
 @media (width <= 63.99875rem) {
   .projects-preview__bg {
-    background-image: url("../../images/projects/bg-tablet.jpg");
+    background-image: url("../images/projects/bg-tablet.jpg");
   }
 }
 @media (width <= 47.99875rem) {
   .projects-preview__bg {
-    background-image: url("../../images/projects/bg-mobile.jpg");
+    background-image: url("../images/projects/bg-mobile.jpg");
   }
 }
 .projects-preview__content {
@@ -1368,14 +1368,14 @@ button[aria-label]::before {
 }
 .about__inner {
   padding-block: 4.375rem;
-  background-image: url("../../images/about/bg.png");
+  background-image: url("../images/about/bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80%;
 }
 @media (width <= 47.99875rem) {
   .about__inner {
-    background-image: url("../../images/about/bg-mobile.png");
+    background-image: url("../images/about/bg-mobile.png");
     background-size: 50%;
   }
 }

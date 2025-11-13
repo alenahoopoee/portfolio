@@ -6,13 +6,13 @@
 
     &__inner {
         padding-block: rem(70);
-        background-image: url('../../images/about/bg.png');
+        background-image: url('../images/about/bg.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: 80%;
 
         @include mobile {
-            background-image: url('../../images/about/bg-mobile.png');
+            background-image: url('../images/about/bg-mobile.png');
             background-size: 50%;
         }
     }
