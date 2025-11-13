@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio | Home</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js" type="module" defer></script>
+</head>
+<body>
+    <header class="header container" data-js-header>
+        <div class="header__body">
+            <a 
+                href="./index.html" 
+                class="header__logo logo" 
+                title="Home"
+            >
+                <img 
+                    src="./images/logo.svg" 
+                    alt="" 
+                    class="logo__image"
+                    width="46" height="46"
+                >
+            </a>
+            <div class="header__overlay" data-js-header-overlay>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="./index.html" class="header__menu-link is-active">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./index.html#about" class="header__menu-link">
+                                Обо мне
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./index.html#services" class="header__menu-link">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./portfolio.html" class="header__menu-link">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="https://github.com/alenahoopoee" class="header__menu-link">
+                                GitHub
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./index.html#contacts" class="header__menu-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="actions actions--colored visible-tablet">
+                    <div class="actions__button button button--with-arrow is-active">
+                        <a href="/" class="actions__button-link"></a>
+                        <p class="actions__button-text">Портфолио</p>
+                        <img 
+                            src="./icons/arrow-right-top.svg" 
+                            alt="" 
+                            class="actions__button-icon"
+                            width="40" height="40"
+                        >
+                    </div>
+                    <div class="actions__button button button--transparent">
+                        <a href="/" class="actions__button-link"></a>
+                        <p class="actions__button-text actions__button-text--colored">Написать мне</p>
+                    </div>
+                </div>
+            </div>
+            <button 
+                class="header__burger-button burger-button visible-tablet"
+                type="button"
+                aria-label="Open menu"
+                title="Open menu"
+                data-js-header-burger-button
+            >
+                <span class="burger-button__line"></span>
+                <span class="burger-button__line"></span>
+                <span class="burger-button__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container" data-js-hero aria-labelledby="hero-title">
+            <div class="hero__header">
+                <div class="hero__subtitle">
+                    <p>Привет!</p>
+                </div>
+                <h1 class="hero__title" id="hero-title">Я <span class="hero__title hero__title--accent">Алена</span>, <br> разработчик сайтов</h1>
+                <div class="hero__description">
+                    <p>Превращаю ваши идеи <br> в работающие сайты <br> на Wordpress</p>
+                </div>
+            </div>
+            <div class="hero__body">
+                <div class="hero__bg">
+                    <img 
+                        src="./images/hero.png" 
+                        alt="" 
+                        class="hero__image"
+                        width="600" height="633"
+                    >
+                </div>
+                <div class="hero__actions actions">
+                    <div class="actions__button button button--with-arrow" data-js-button-portfolio>
+                        <a href="./portfolio.html" class="actions__button-link"></a>
+                        <p class="actions__button-text">Портфолио</p>
+                    </div>
+                    <div class="actions__button button button--transparent" data-js-button-contact>
+                        <a href="https://t.me/alena_hoopoe" class="actions__button-link"></a>
+                        <p class="actions__button-text">Написать мне</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects-preview" aria-labelledby="projects-title">
+            <div class="projects-preview__inner">
+                <div class="projects-preview__bg"></div>
+                <div class="projects-preview__content container">
+                    <div class="projects-preview__header">
+                        <h2 class="visually-hidden" id="projects-title">Projects</h2>
+                        <h3 class="projects-preview__title">Последние <span class="projects-preview__title projects-preview__title--accent">Проекты</span></h3>
+                        <div class="projects-preview__button hidden-mobile">
+                            <a href="./portfolio.html" class="projects-preview__button-link"></a>
+                            <p class="projects-preview__button-text">Посмотреть все</p>
+                        </div>
+                    </div>
+                    <div class="projects-preview__body">
+                        <ul class="projects-preview__list">
+                            <li class="projects-preview__item projects-preview-card">
+                                <div class="projects-preview-card__header">
+                                    <p class="projects-preview-card__title">Многостраничный</p>
+                                </div>
+                                <img 
+                                    src="./images/projects/card-1.png" 
+                                    alt="" 
+                                    class="projects-preview-card__image"
+                                    width="416" height="351"
+                                    loading="lazy"
+                                >
+                                <div class="projects-preview-card__button">
+                                    <a href="" class="projects-preview-card__button-link"></a>
+                                    <img 
+                                        src="./icons/arrow-right-top.svg"  
+                                        alt="" 
+                                        class="projects-preview-card__button-icon"
+                                        width="72" height="72"
+                                    >
+                                </div>
+                            </li>
+                            <li class="projects-preview__item projects-preview-card">
+                                <div class="projects-preview-card__header">
+                                    <p class="projects-preview-card__title">Лендинг</p>
+                                </div>
+                                <img 
+                                    src="./images/projects/card-2.png" 
+                                    alt="" 
+                                    class="projects-preview-card__image"
+                                    width="416" height="351"
+                                    loading="lazy"
+                                >
+                                <div class="projects-preview-card__button">
+                                    <a href="" class="projects-preview-card__button-link"></a>
+                                    <img 
+                                        src="./icons/arrow-right-top.svg"  
+                                        alt="" 
+                                        class="projects-preview-card__button-icon"
+                                        width="72" height="72"
+                                    >
+                                </div>
+                            </li>
+                            <li class="projects-preview__item projects-preview-card">
+                                <div class="projects-preview-card__header">
+                                    <p class="projects-preview-card__title">Блог</p>
+                                </div>
+                                <img 
+                                    src="./images/projects/card-3.png" 
+                                    alt="" 
+                                    class="projects-preview-card__image"
+                                    width="416" height="351"
+                                    loading="lazy"
+                                >
+                                <div class="projects-preview-card__button">
+                                    <a href="" class="projects-preview-card__button-link"></a>
+                                    <img 
+                                        src="./icons/arrow-right-top.svg"  
+                                        alt="" 
+                                        class="projects-preview-card__button-icon"
+                                        width="72" height="72"
+                                    >
+                                </div>
+                            </li>
+                            <li class="projects-preview__item projects-preview-card">
+                                <div class="projects-preview-card__header">
+                                    <p class="projects-preview-card__title">Блог</p>
+                                </div>
+                                <img 
+                                    src="./images/projects/card-3.png" 
+                                    alt="" 
+                                    class="projects-preview-card__image"
+                                    width="416" height="351"
+                                    loading="lazy"
+                                >
+                                <div class="projects-preview-card__button">
+                                    <a href="" class="projects-preview-card__button-link"></a>
+                                    <img 
+                                        src="./icons/arrow-right-top.svg"  
+                                        alt="" 
+                                        class="projects-preview-card__button-icon"
+                                        width="72" height="72"
+                                    >
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="projects-preview__button visible-mobile">
+                            <a href="" class="projects-preview__button-link"></a>
+                            <p class="projects-preview__button-text">Посмотреть все</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services" aria-labelledby="services-title" id="services">
+            <div class="services__inner container">
+                <h2 class="services__title" id="services-title">Мои <span class="services__title services__title--accent">Услуги</span></h2>
+                <div class="services__body">
+                    <ul class="services__list">
+                        <li class="services__item services-card">
+                            <div class="services-card__blur"></div>
+                            <div class="services-card__title">
+                                <p>Сайт под ключ</p>
+                            </div>
+                            <ul class="services-card__list">
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Адаптация или кастомная разработка темы</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Лендинг или многостраничный сайт</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Подбор хостинга и домена</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Наполнение контентом</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="services__item services-card">
+                            <div class="services-card__blur"></div>
+                            <div class="services-card__title">
+                                <p>Доработка сайта</p>
+                            </div>
+                            <ul class="services-card__list">
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Исправление ошибок и багов</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Добавление новых страниц и блоков</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Правки в дизайне</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Подключение форм обратной связи</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="services__item services-card">
+                            <div class="services-card__blur"></div>
+                            <div class="services-card__title">
+                                <p>Техническая поддержка</p>
+                            </div>
+                            <ul class="services-card__list">
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Обновление плагинов и тем</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Резервное копирование</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Мониторинг безопасности</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Консультации по управлению</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="services__item services-card">
+                            <div class="services-card__blur"></div>
+                            <div class="services-card__title">
+                                <p>SEO-оптимизация</p>
+                            </div>
+                            <ul class="services-card__list">
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Базовая SEO-настройка </p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Ускорение загрузки сайта</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Установка Яндекс.Метрики</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Оптимизация изображений</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="services__item services-card">
+                            <div class="services-card__blur"></div>
+                            <div class="services-card__title">
+                                <p>Защита сайта</p>
+                            </div>
+                            <ul class="services-card__list">
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Установка SSL-сертификата</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Настройка защиты от взлома</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Регулярные проверки безопасности</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Защита от SQL-инъекций и XSS-атак</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="services__item services-card">
+                            <div class="services-card__blur"></div>
+                            <div class="services-card__title">
+                                <p>Срочные правки</p>
+                            </div>
+                            <ul class="services-card__list">
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Исправление срочных ошибок</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Внесение мелких правок</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Восстановление после сбоев</p>
+                                </li>
+                                <li class="services-card__item">
+                                    <img src="./icons/arrow-left-right.svg" alt="" class="services-card__icon">
+                                    <p class="services-card__text">Экстренная помощь</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="services__footer">
+                    <h3 class="services__description">Чтобы узнать больше об услугах, <br> свяжитесь со мной</h3>
+                    <div class="services__button">
+                        <a href="https://t.me/alena_hoopoe" class="services__button-link"></a>
+                        <p class="services__button-text">Я здесь</p>
+                        <img src="./icons/arrow-right-top.svg" alt="" class="services__button-icon">
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <section class="about" aria-labelledby="about-title" id="about">
+            <div class="about__inner container">
+                <h2 class="about__title visually-hidden" id="about-title">About me</h2>
+                <div class="about__body">
+                    <ul class="about__steps-list">
+                        <div class="about__blur"></div>
+                        <li class="about__steps-item">
+                            <p class="about__steps-text h4">Подхожу индивидуально к каждому проекту</p>
+                            <img src="./icons/arrow-top-bottom.svg" alt="" class="about__steps-icon">
+                        </li>
+                        <li class="about__steps-item">
+                            <p class="about__steps-text h4">Использую современные инструменты для надежного результата</p>
+                            <img src="./icons/arrow-top-bottom.svg" alt="" class="about__steps-icon">
+                        </li>
+                        <li class="about__steps-item">
+                            <p class="about__steps-text h4">Доступно объясняю технические аспекты</p>
+                            <img src="./icons/arrow-top-bottom.svg" alt="" class="about__steps-icon">
+                        </li>
+                        <li class="about__steps-item">
+                            <p class="about__steps-text h4">Остаюсь на связи для дальнейшего сотрудничества</p>
+                        </li>
+                    </ul>
+                    <ul class="about__tools-list">
+                        <li class="about__tools-item">
+                            <div class="about__blur"></div>
+                            <img 
+                                src="./images/tools/1.png" 
+                                alt="" 
+                                class="about__tools-image"
+                            >
+                        </li>
+                        <li class="about__tools-item">
+                            <div class="about__blur"></div>
+                            <img 
+                                src="./images/tools/2.png" 
+                                alt="" 
+                                class="about__tools-image"
+                            >
+                        </li>
+                        <li class="about__tools-item">
+                            <div class="about__blur"></div>
+                            <img 
+                                src="./images/tools/3.png" 
+                                alt="" 
+                                class="about__tools-image"
+                            >
+                        </li>
+                        <li class="about__tools-item">
+                            <div class="about__blur"></div>
+                            <img 
+                                src="./images/tools/4.png" 
+                                alt="" 
+                                class="about__tools-image"
+                            >
+                        </li>
+                        <li class="about__tools-item">
+                            <div class="about__blur"></div>
+                            <img 
+                                src="./images/tools/5.png" 
+                                alt="" 
+                                class="about__tools-image"
+                            >
+                        </li>
+                        <li class="about__tools-item">
+                            <div class="about__blur"></div>
+                            <img 
+                                src="./images/tools/6.png" 
+                                alt="" 
+                                class="about__tools-image"
+                            >
+                        </li>
+                        <li class="about__tools-item">
+                            <div class="about__blur"></div>
+                            <img 
+                                src="./images/tools/7.png" 
+                                alt="" 
+                                class="about__tools-image"
+                            >
+                        </li>
+                        <li class="about__tools-item">
+                            <div class="about__blur"></div>
+                            <img 
+                                src="./images/tools/8.png" 
+                                alt="" 
+                                class="about__tools-image"
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="feedback" aria-labelledby="feedback-title">
+            <div class="feedback__inner container">
+                <h2 class="feedback__title" id="feedback-title">У вас уже есть <span class="feedback__title feedback__title--accent">идея</span>? <br> Давайте обсудим</h2>
+                <form action="https://formspree.io/f/mjkjkarn" method="POST" class="feedback__form">
+                    <input type="hidden" name="_next" value="https://yourusername.github.io/portfolio/thanks.html">
+                    <div class="feedback__body">
+                        <div class="feedback__bg-icon">
+                            <img 
+                                src="./icons/mail.svg"
+                                alt="" 
+                                class="feedback__icon"
+                                width="32" height="32" loading="lazy"
+                            >
+                        </div>
+                        <input 
+                            id="email-input"
+                            type="email" 
+                            name="email"
+                            class="feedback__input"
+                            placeholder="Введите свой email"
+                            required
+                        >
+                    </div>
+                    <button class="feedback__button" type="submit" id="submit-button">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="footer__inner container">
+            <div class="footer__header">
+                <h2 class="visually-hidden">Contacts</h2>
+                <h3 class="footer__title">Останемся на связи?</h3>
+                <ul class="footer__soc1al-list">
+                    <li class="footer__soc1al-item">
+                        <a href="" class="footer__soc1al-link"></a>
+                        <img 
+                            src="./images/soc1al/tg.png" 
+                            alt="" 
+                            class="footer__soc1al-icon"
+                            width="70" height="70" loading="lazy"
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__body">
+                <div class="footer__info">
+                    <a 
+                        href="/" 
+                        class="footer__info-logo logo"  
+                        title="Home"
+                    >
+                        <img 
+                            src="./images/logo.svg" 
+                            alt="" 
+                            class="logo__image"
+                            width="46" height="46"
+                        >
+                    </a>
+                    <div class="footer__info-text">
+                        <p>Превращаю ваши идеи <br> в работающие сайты на Wordpress</p>
+                    </div>
+                </div>
+                <nav class="footer__menu">
+                    <div class="footer__menu-column">
+                        <a href="/" class="footer__menu-main-link h6">Навигация</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="./index.html" class="footer__menu-link">Главная</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./index.html#about" class="footer__menu-link">Обо мне</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./index.html#services" class="footer__menu-link">Услуги</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="https://github.com/alenahoopoee" class="footer__menu-link">GitHub</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./portfolio.html" class="footer__menu-link">Портфолио</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-column">
+                        <a href="/" class="footer__menu-main-link h6">Контакты</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="tel:+79781009382" class="footer__menu-link">+7 (978) 100-93-82</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="mailto:elena.udod03@gmail.com" class="footer__menu-link">elena.udod03@gmail.com</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="https://t.me/alena_hoopoe" class="footer__menu-link">tg: @alena_hoopoe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__extra">
+                <p class="footer__copyright">©<time datetime="2025">2025</time> Portfolio. Все права соблюдены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

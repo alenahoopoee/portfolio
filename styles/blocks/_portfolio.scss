@@ -1,0 +1,32 @@
+@use '../helpers' as *;
+
+.portfolio {
+    padding-block: rem(130) rem(80);
+
+    @include tablet {
+        padding-block: rem(120) rem(50);
+    }
+
+    @include mobile {
+        padding-top: rem(100);
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(70);
+
+        @include tablet {
+            row-gap: rem(50);
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        row-gap: rem(10);
+    }
+}

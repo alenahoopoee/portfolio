@@ -1,0 +1,24 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/icon';
+@use 'blocks/logo';
+@use 'blocks/button';
+@use 'blocks/burger-button';
+@use 'blocks/header';
+@use 'blocks/actions';
+@use 'blocks/soc1als';
+@use 'blocks/footer';
+@use 'blocks/hero';
+@use 'blocks/projects-preview-card';
+@use 'blocks/projects-preview';
+@use 'blocks/services-card';
+@use 'blocks/services';
+@use 'blocks/about';
+@use 'blocks/feedback';
+@use 'blocks/portfolio-card';
+@use 'blocks/portfolio';
+@use 'blocks/thanks';

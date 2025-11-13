@@ -1,0 +1,54 @@
+@use '../helpers' as *;
+
+.thanks {
+    padding-block: rem(200);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(70);
+
+    @include mobile {
+        row-gap: rem(40);
+    }
+
+    &__button {
+        position: relative;
+        align-self: start;
+        padding: rem(20);
+        border-radius: rem(50);
+        background-color: var(--color-blue);
+        color: var(--color-white);
+        font-size: fluid(24, 16);
+
+        @include tablet {
+            padding: rem(12);
+        }
+
+        &.is-active {
+            border: rem(0.5) solid var(--color-light-blue-1);
+            border-radius: rem(60);
+            padding-right: rem(75);
+            background-color: var(--color-blue);
+
+            @include tablet {
+                padding-right: rem(55);
+            }
+
+            &::after {
+                content: '';
+                right: rem(20);
+                width: rem(50);
+                height: rem(50);
+                background-image: url('../../icons/arrow-right-top.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                @include abs-y;
+
+                @include tablet {
+                    width: rem(30);
+                    height: rem(30);
+                }
+            }
+        }
+    }
+}

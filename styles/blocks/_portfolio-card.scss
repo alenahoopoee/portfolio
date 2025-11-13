@@ -1,0 +1,102 @@
+@use '../helpers' as *;
+
+.portfolio-card {
+    display: grid;
+    grid-template-columns: (auto 35%);
+    grid-template-areas: "content image";
+    gap: rem(10);
+
+    &:nth-child(2n) {
+        grid-template-areas: "image content";
+        grid-template-columns: (35% auto);
+    }
+
+    &__info {
+        grid-area: content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: rem(15);
+        padding: rem(30);
+        border-radius: rem(35);
+        background-color: var(--color-light-violet);
+    }
+
+    &__tags {
+        &-list {
+            display: flex;
+            column-gap: rem(6);
+        }
+
+        &-item {
+            padding: rem(8) rem(16);
+            border: rem(1) solid var(--color-blue);
+            border-radius: rem(50);
+
+            p {
+                font-size: rem(18);
+                font-weight: 500;
+                color: var(--color-blue);
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(10);
+    }
+
+    &__title {
+        font-family: var(--font-family);
+        color: var(--color-blue);
+    }
+
+    &__actions {
+        display: flex;
+        column-gap: rem(6);
+
+        &-text {
+            display: flex;
+            align-items: center;
+            padding: rem(3) rem(18);
+            border: rem(1) solid var(--color-blue);
+            border-radius: rem(35);
+
+            p {
+                font-weight: 600;
+                color: var(--color-blue);
+            }
+        }
+    }
+
+    &__button {
+        position: relative;
+        display: flex;
+        padding: rem(6);
+        border: rem(1) solid var(--color-blue);
+        border-radius: 50%;
+
+        @include hover {
+            .portfolio-card__button-icon {
+                transform: rotate(45deg);
+            }
+        }
+
+        &-link {
+            @include link-button;
+        }
+
+        &-icon {
+            transition-duration: var(--transition-duration);
+        }
+    }
+
+    &__wrapper-image {
+        grid-area: image;
+        padding: rem(30);
+        border-radius: rem(35);
+        background-color: var(--color-violet);
+    }
+}

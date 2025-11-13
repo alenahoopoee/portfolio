@@ -1,0 +1,80 @@
+@use '../helpers' as *;
+
+.actions {
+    @include abs-x;
+
+    width: max-content;
+    display: flex;
+    bottom: rem(47);
+    border-radius: rem(50);
+    padding: rem(7);
+    border: 2px solid #c9c9c9;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1);
+
+    @include mobile-s {
+        bottom: rem(16);
+        padding: rem(5);
+    }
+
+    &--colored {
+        border: none;
+        background-color: var(--color-light-violet);
+
+        @include mobile-s {
+           bottom: rem(47);
+        }
+
+        .actions__button-text {
+            font-size: fluid(20, 16);
+        }
+
+        .actions__button-text--colored {
+            color: var(--color-blue);
+        }
+
+        .button {
+            padding: rem(10) rem(32);
+
+            @include mobile-s {
+                padding: rem(10) rem(7);
+            }
+        }
+    }
+
+    &__button {
+        position: relative;
+        padding: rem(16) rem(32);
+        border-radius: rem(60);
+
+        &-text {
+            font-weight: 500;
+            font-size: fluid(20, 14);
+            letter-spacing: -0.01em;
+            color: var(--color-white);
+        }
+
+        &-link {
+            @include link-button;
+        }
+
+        &.is-active {
+            border: rem(0.5) solid var(--color-light-blue-1);
+            border-radius: rem(60);
+            padding-right: rem(75);
+            background-color: var(--color-blue);
+
+            &::after {
+                content: '';
+                right: rem(20);
+                width: rem(50);
+                height: rem(50);
+                background-image: url('../../icons/arrow-right-top.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                @include abs-y;
+            }
+        }
+    }
+}

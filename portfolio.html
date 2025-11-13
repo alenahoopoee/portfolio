@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio | Portfolio</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js" type="module" defer></script>
+</head>
+<body>
+    <header class="header container" data-js-header>
+        <div class="header__body">
+            <a 
+                href="./index.html" 
+                class="header__logo logo" 
+                title="Home"
+            >
+                <img 
+                    src="./images/logo.svg" 
+                    alt="" 
+                    class="logo__image"
+                    width="46" height="46"
+                >
+            </a>
+            <div class="header__overlay" data-js-header-overlay>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="./index.html" class="header__menu-link is-active">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./index.html#about" class="header__menu-link">
+                                Обо мне
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./index.html#services" class="header__menu-link">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./portfolio.html" class="header__menu-link">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="https://github.com/alenahoopoee" class="header__menu-link">
+                                GitHub
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./index.html#contacts" class="header__menu-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="actions actions--colored visible-tablet">
+                    <div class="actions__button button button--with-arrow is-active">
+                        <a href="/" class="actions__button-link"></a>
+                        <p class="actions__button-text">Портфолио</p>
+                        <img 
+                            src="./icons/arrow-right-top.svg" 
+                            alt="" 
+                            class="actions__button-icon"
+                            width="40" height="40"
+                        >
+                    </div>
+                    <div class="actions__button button button--transparent">
+                        <a href="/" class="actions__button-link"></a>
+                        <p class="actions__button-text actions__button-text--colored">Написать мне</p>
+                    </div>
+                </div>
+            </div>
+            <button 
+                class="header__burger-button burger-button visible-tablet"
+                type="button"
+                aria-label="Open menu"
+                title="Open menu"
+                data-js-header-burger-button
+            >
+                <span class="burger-button__line"></span>
+                <span class="burger-button__line"></span>
+                <span class="burger-button__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio" aria-labelledby="portfolio-title">
+            <div class="portfolio__inner container">
+                <h2 class="portfolio__title" id="portfolio-title">Портфолио</h2>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item portfolio-card">
+                        <div class="portfolio-card__info portfolio-card__info--blue-2">
+                            <ul class="portfolio-card__tags-list">
+                                <li class="portfolio-card__tags-item">
+                                    <p>Многостраничный</p>
+                                </li>
+                                <li class="portfolio-card__tags-item">
+                                    <p>Адаптивный</p>
+                                </li>
+                                <li class="portfolio-card__tags-item">
+                                    <p>Сортировка</p>
+                                </li>
+                            </ul>
+                            <div class="portfolio-card__body">
+                                <h3 class="portfolio-card__title h4">Управляющая компания</h3>
+                                <div class="portfolio-card__actions">
+                                    <div class="portfolio-card__actions-text">
+                                        <p>Подробнее</p>
+                                    </div>
+                                    <div class="portfolio-card__button">
+                                        <a href="https://uknahim.su" blank class="portfolio-card__button-link"></a>
+                                        <img src="./icons/arrow-right-top--blue.svg" alt="" class="portfolio-card__button-icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__wrapper-image portfolio-card__wrapper-image--blue-2">
+                            <img src="./images/portfolio/uk-nahim.png" width="600" height="300" alt="" class="portfolio-card__image">
+                        </div>
+                    </li>
+                    <li class="portfolio__item portfolio-card">
+                        <div class="portfolio-card__info portfolio-card__info--blue-3">
+                            <ul class="portfolio-card__tags-list">
+                                <li class="portfolio-card__tags-item">
+                                    <p>Многостраничный</p>
+                                </li>
+                                <li class="portfolio-card__tags-item">
+                                    <p>Интернет-магазин</p>
+                                </li>
+                                <li class="portfolio-card__tags-item">
+                                    <p>Адаптивный</p>
+                                </li>
+                            </ul>
+                            <div class="portfolio-card__body">
+                                <h3 class="portfolio-card__title h4">Кофейня</h3>
+                                <div class="portfolio-card__actions">
+                                    <div class="portfolio-card__actions-text">
+                                        <p>Подробнее</p>
+                                    </div>
+                                    <div class="portfolio-card__button">
+                                        <a href="https://alenahoopoee.github.io/brewhaus/" class="portfolio-card__button-link"></a>
+                                        <img src="./icons/arrow-right-top--blue.svg" alt="" class="portfolio-card__button-icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__wrapper-image portfolio-card__wrapper-image--blue-3">
+                            <img src="./images/portfolio/brewhaus.png" width="600" height="300" alt="" class="portfolio-card__image">
+                        </div>
+                    </li>
+                    <li class="portfolio__item portfolio-card">
+                        <div class="portfolio-card__info">
+                            <ul class="portfolio-card__tags-list">
+                                <li class="portfolio-card__tags-item">
+                                    <p>Многостраничный</p>
+                                </li>
+                                <li class="portfolio-card__tags-item">
+                                    <p>Адаптивный</p>
+                                </li>
+                            </ul>
+                            <div class="portfolio-card__body">
+                                <h3 class="portfolio-card__title h4">Подкаст-студия</h3>
+                                <div class="portfolio-card__actions">
+                                    <div class="portfolio-card__actions-text">
+                                        <p>Подробнее</p>
+                                    </div>
+                                    <div class="portfolio-card__button">
+                                        <a href="https://alenahoopoee.github.io/podofcast/" class="portfolio-card__button-link"></a>
+                                        <img src="./icons/arrow-right-top--blue.svg" alt="" class="portfolio-card__button-icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__wrapper-image">
+                            <img src="./images/portfolio/podcast.png" width="600" height="300" alt="" class="portfolio-card__image">
+                        </div>
+                    </li>
+                    <li class="portfolio__item portfolio-card">
+                        <div class="portfolio-card__info">
+                            <ul class="portfolio-card__tags-list">
+                                <li class="portfolio-card__tags-item">
+                                    <p>Блог</p>
+                                </li>
+                                <li class="portfolio-card__tags-item">
+                                    <p>Адаптивный</p>
+                                </li>
+                                <li class="portfolio-card__tags-item">
+                                    <p>Показ видео</p>
+                                </li>
+                            </ul>
+                            <div class="portfolio-card__body">
+                                <h3 class="portfolio-card__title h4">Технический блог</h3>
+                                <div class="portfolio-card__actions">
+                                    <div class="portfolio-card__actions-text">
+                                        <p>Подробнее</p>
+                                    </div>
+                                    <div class="portfolio-card__button">
+                                        <a href="https://alenahoopoee.github.io/futuretech/" class="portfolio-card__button-link"></a>
+                                        <img src="./icons/arrow-right-top--blue.svg" alt="" class="portfolio-card__button-icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__wrapper-image">
+                            <img src="./images/portfolio/1.png" width="600" height="300" alt="" class="portfolio-card__image">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="feedback" aria-labelledby="feedback-title">
+            <div class="feedback__inner container">
+                <h2 class="feedback__title" id="feedback-title">У вас уже есть <span class="feedback__title feedback__title--accent">идея</span>? <br> Давайте обсудим</h2>
+                <div class="feedback__form">
+                    <div class="feedback__body">
+                        <div class="feedback__bg-icon">
+                            <img 
+                                src="./icons/mail.svg"
+                                alt="" 
+                                class="feedback__icon"
+                                width="32" height="32" loading="lazy"
+                            >
+                        </div>
+                        <input 
+                            id="email"
+                            type="email" 
+                            class="feedback__input"
+                            placeholder="Введите свой email"
+                            required
+                        >
+                    </div>
+                    <button class="feedback__button" type="submit" id="email">Отправить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="footer__inner container">
+            <div class="footer__header">
+                <h2 class="visually-hidden">Contacts</h2>
+                <h3 class="footer__title">Останемся на связи?</h3>
+                <ul class="footer__soc1al-list">
+                    <li class="footer__soc1al-item">
+                        <a href="" class="footer__soc1al-link"></a>
+                        <img 
+                            src="./images/soc1al/tg.png" 
+                            alt="" 
+                            class="footer__soc1al-icon"
+                            width="70" height="70" loading="lazy"
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__body">
+                <div class="footer__info">
+                    <a 
+                        href="/" 
+                        class="footer__info-logo logo"  
+                        title="Home"
+                    >
+                        <img 
+                            src="./images/logo.svg" 
+                            alt="" 
+                            class="logo__image"
+                            width="46" height="46"
+                        >
+                    </a>
+                    <div class="footer__info-text">
+                        <p>Превращаю ваши идеи <br> в работающие сайты на Wordpress</p>
+                    </div>
+                </div>
+                <nav class="footer__menu">
+                    <div class="footer__menu-column">
+                        <a href="/" class="footer__menu-main-link h6">Навигация</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="./index.html" class="footer__menu-link">Главная</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./index.html#about" class="footer__menu-link">Обо мне</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./index.html#services" class="footer__menu-link">Услуги</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="https://github.com/alenahoopoee" class="footer__menu-link">GitHub</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./portfolio.html" class="footer__menu-link">Портфолио</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-column">
+                        <a href="/" class="footer__menu-main-link h6">Контакты</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="tel:+79781009382" class="footer__menu-link">+7 (978) 100-93-82</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="mailto:elena.udod03@gmail.com" class="footer__menu-link">elena.udod03@gmail.com</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="https://t.me/alena_hoopoe" class="footer__menu-link">tg: @alena_hoopoe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__extra">
+                <p class="footer__copyright">©<time datetime="2024">2025</time> Portfolio. Все права соблюдены.</p>
+                <p class="footer__policy">User Terms & Conditions | Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

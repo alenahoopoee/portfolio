@@ -1,0 +1,34 @@
+@use 'helpers' as *;
+
+:root {
+  --color-white: #FFFFFF;
+
+  --color-black: #000000;
+
+  --color-blue: #2d3f71;
+  --color-light-blue-1: #c8d3e5;
+  --color-light-blue-2: #d8e4f2;
+  --color-light-blue-3: #e7ebed;
+
+  --color-violet: #8189d2;
+  --color-light-violet: #b0befd;
+
+  --color-pink: #f283ae;
+  --color-light-pink: #fbdae5;
+
+  --color-light-yellow: #ffefb7;
+  --color-beige: #fbf4ea;
+  --color-sunset: #f3cc97;
+
+  --font-family-base: 'Montserrat', sans-serif;
+  --font-family-accent: 'Montserrat Alternates', sans-serif;
+
+  --container-width: #{rem(1440)};
+  --container-padding-x: #{rem(20)};
+
+  --transition-duration: 0.2s;
+
+  @include laptop {
+    --container-width: #{rem(1280)};
+  }
+}

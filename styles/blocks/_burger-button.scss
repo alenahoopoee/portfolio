@@ -1,0 +1,44 @@
+@use '../helpers' as *;
+
+.burger-button {
+    @include square(rem(46));
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: rem(15) rem(12);
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 50%;
+
+    &.is-active {
+        .burger-button__line {
+            &:first-child {
+                rotate: 45deg;
+                transform-origin: 0;
+                translate: 0.25em -0.05em;
+
+                @include mobile-s {
+                    translate: 0.15em -0.05em;
+                }
+            }
+
+            &:nth-child(2) {
+                rotate: -45deg;
+            }
+
+            &:last-child {
+                width: 0;
+            }            
+        }
+    }
+
+    &__line {
+        width: 100%;
+        height: rem(1.5);
+        background-color: currentColor;
+        border-radius: 1rem;
+        transition-duration: var(--transition-duration);
+    }
+}

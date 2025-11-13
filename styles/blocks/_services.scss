@@ -1,0 +1,90 @@
+@use '../helpers' as *;
+
+.services {
+    &__inner {
+        padding-block: rem(85);
+        display: grid;
+        gap: rem(60);
+
+        @include tablet {
+            padding-block: rem(65);
+            gap: rem(30);
+        }
+    }
+
+    &__title {
+        text-align: center;
+        padding-bottom: rem(26);
+
+        &--accent {
+            color: var(--color-violet);
+        }
+    }
+
+    &__list {
+        --cols: 3;
+
+        display: grid;
+        grid-template-columns: repeat(var(--cols), 1fr);
+        gap: rem(8);
+
+        @include tablet {
+            --cols: 2;
+        }
+
+        @include mobile {
+            --cols: 1;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(20);
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__description {
+        font-family: var(--font-family);
+        color: var(--color-violet);
+    }
+    
+    &__button {
+        position: relative;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        padding: rem(18) rem(26);
+        border-radius: rem(50);
+        background-color: var(--color-violet);
+
+        @include tablet {
+            align-self: start;
+            padding: rem(14) rem(20);
+        }
+
+        @include hover {
+            .services__button-icon {
+                transform: rotate(45deg);
+            }
+        }
+
+        &-link {
+            @include link-button;
+        }
+
+        &-text {
+            font-size: rem(24);
+            line-height: 90%;
+            letter-spacing: -0.01em;
+            color: var(--color-white);
+        }
+
+        &-icon {
+            transition-duration: var(--transition-duration);
+        }
+    }
+}

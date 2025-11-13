@@ -1,0 +1,113 @@
+@use '../helpers' as *;
+
+.hero {
+    padding: rem(90) rem(26) 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(170);
+
+    @include mobile {
+        row-gap: rem(230);
+        padding-top: rem(60)
+    }
+
+    @include mobile-s {
+        row-gap: rem(170);
+    }
+
+    &__header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(8);
+    }
+
+    &__subtitle {
+        position: relative;
+        align-self: start;
+        border: 1.27px solid var(--color-black);
+        border-radius: rem(38);
+        padding: rem(12) rem(25);
+        font-weight: 600;
+        font-size: fluid(20, 14);
+        letter-spacing: -0.01em;
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: -20px;
+            top: -5px;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            background-image: url('../../icons/lines-right-top.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @include mobile {
+            padding: rem(4) rem(12);
+        }
+    }
+
+    &__title {
+        &--accent {
+            color: var(--color-pink);
+        }
+    }
+
+    &__description {
+        position: absolute;
+        bottom: rem(-150);
+        font-family: var(--font-family-accent);
+        font-weight: 400;
+        font-size: fluid(26, 14);
+        letter-spacing: 0.01em;
+
+        @include mobile {
+            bottom: rem(-90);
+        }
+
+        @include mobile-s {
+            bottom: rem(-70);
+        }
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__bg {
+        width: rem(867);
+        height: rem(416);
+        background-color: var(--color-light-pink);
+        border-radius: rem(1000) rem(1000) 0 0;
+
+        @include mobile {
+            width: 100%;
+            height: rem(270);
+        }
+
+        @include mobile-s {
+            width: fluid(450, 370);
+            height: fluid(250, 170);
+        }
+    }
+
+    &__image {
+        @include abs-x;
+
+        bottom: 0;
+
+        @include mobile {
+            width: rem(500);
+        }
+
+        @include mobile-s {
+            width: rem(300);
+        }
+    }
+}

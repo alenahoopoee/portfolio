@@ -1,0 +1,128 @@
+@use '../helpers' as *;
+
+.about {
+    border-radius: rem(50);
+    background-color: var(--color-beige);
+
+    &__inner {
+        padding-block: rem(70);
+        background-image: url('../../images/about/bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+
+        @include mobile {
+            background-image: url('../../images/about/bg-mobile.png');
+            background-size: 50%;
+        }
+    }
+
+    &__body {
+        display: grid;
+        gap: rem(13);
+
+        @include mobile-above {
+            grid-template-columns: auto 40%;
+        }
+    }
+
+    &__steps {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: rem(1) solid #c9c9c9;
+            border-radius: rem(35);
+            padding: rem(30) rem(25);
+        }
+
+        &-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 2;
+        }
+
+        &-text {
+            font-family: var(--third-family);
+            font-weight: 600;
+            font-size: fluid(30, 20);
+            line-height: 110%;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: #2d3f71;
+        }
+
+        &-icon {
+            position: relative;
+            z-index: 2;
+
+            @include tablet {
+                width: rem(50);
+            }
+        }
+    }
+
+    &__tools {
+        &-list {
+            --cols: 3;
+
+            display: grid;
+            grid-template-columns: repeat(var(--cols), 1fr);
+            gap: rem(13);
+
+            @include tablet {
+                --cols: 2;
+            }
+
+            @include mobile {
+                --cols: 3;
+            }
+        }
+
+        &-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: rem(25);
+            border: rem(1) solid #c9c9c9;
+            border-radius: rem(35);
+
+            &:nth-child(5) {
+                grid-column: 2 / 4;
+
+                @include tablet {
+                    grid-column: 1;
+                }
+
+                @include mobile {
+                    padding: rem(30);
+                    grid-column: 2 / 4;
+                }
+            }
+
+            @include mobile {
+                padding: rem(20);
+            }
+        }
+
+        &-image {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    &__blur {
+        @include link-button;
+        border-radius: rem(35);
+        z-index: 1;
+
+        backdrop-filter: blur(3px);
+        background: rgba(255, 255, 255, 0.1);
+    }
+}

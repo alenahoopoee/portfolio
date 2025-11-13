@@ -1,0 +1,106 @@
+@use '../helpers' as *;
+
+.feedback {
+    &__inner {
+        padding-block: rem(100);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: rem(20);
+
+        @include tablet {
+            padding-block: rem(80);
+        }
+
+        @include mobile {
+            padding-block: rem(50);
+        }
+    }
+
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: var(--color-blue);
+
+        &--accent {
+            color: var(--color-pink);
+        }
+    }
+
+    &__form {
+        display: flex;
+        max-width: fluid(832, 532);
+        justify-content: center;
+        align-items: center;
+        gap: rem(17);
+        padding: rem(14);
+        border: rem(1) solid #e4e7ec;
+        border-radius: rem(50);
+
+        @include mobile {
+            width: 100%;
+            border: none;
+            flex-direction: column;
+        }
+    }
+
+    &__body {
+        width: 100%;
+        padding: rem(14);
+        border: rem(1) solid #e4e7ec;
+        border-radius: rem(50);
+        display: flex;
+        gap: rem(17);
+
+        @include mobile-above {
+            display: contents;
+        }
+
+        @include mobile-s {
+            gap: rem(10);
+        }
+    }
+    
+
+    &__bg-icon {
+        padding: rem(13);
+        border-radius: 50%;
+        background-color: var(--color-light-pink);
+
+        @include mobile-s {
+            padding: rem(7);
+        }
+    }
+
+    &__input {
+        flex-grow: 1;
+        border: none;
+        background-color: transparent;
+        font-size: fluid(20, 14);
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: rem(20) rem(40);
+        font-size: fluid(18, 16);
+        border-radius: rem(60);
+        border: rem(1) solid var(--color-pink);
+        color: var(--color-white);
+        background-color: var(--color-pink);
+        transition-duration: var(--transition-duration);
+
+        @include mobile-s {
+            width: 100%;
+        }
+
+        @include hover {
+            color: var(--color-pink);
+            background-color: var(--color-light-pink);
+        }
+    }
+}

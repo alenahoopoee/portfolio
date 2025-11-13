@@ -1,0 +1,16 @@
+@use '../helpers' as *;
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(6);
+    transition-duration: 0.3s;
+
+    @include tablet {
+        padding: rem(10) rem(20);
+    }
+
+    @include mobile-s {
+        padding: rem(7) rem(7);
+    }
+}
