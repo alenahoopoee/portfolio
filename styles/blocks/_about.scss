@@ -1,6 +1,7 @@
 @use '../helpers' as *;
 
 .about {
+    scroll-margin-top: rem(130);
     border-radius: rem(50);
     background-color: var(--color-beige);
 

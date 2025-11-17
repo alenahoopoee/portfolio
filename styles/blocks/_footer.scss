@@ -1,6 +1,7 @@
 @use '../helpers' as *;
 
 .footer {
+    scroll-margin-top: rem(130);
     border-radius: rem(24) rem(24) 0 0;
     padding: rem(25);
     background-color: var(--color-blue);
