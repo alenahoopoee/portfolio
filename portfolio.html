@@ -218,7 +218,8 @@
         <section class="feedback" aria-labelledby="feedback-title">
             <div class="feedback__inner container">
                 <h2 class="feedback__title" id="feedback-title">У вас уже есть <span class="feedback__title feedback__title--accent">идея</span>? <br> Давайте обсудим</h2>
-                <div class="feedback__form">
+                <form action="https://formspree.io/f/mjkjkarn" method="POST" class="feedback__form">
+                    <input type="hidden" name="_next" value="https://alenahoopoee.github.io/portfolio/thanks.html">
                     <div class="feedback__body">
                         <div class="feedback__bg-icon">
                             <img 
@@ -229,15 +230,16 @@
                             >
                         </div>
                         <input 
-                            id="email"
+                            id="email-input"
                             type="email" 
+                            name="email"
                             class="feedback__input"
                             placeholder="Введите свой email"
                             required
                         >
                     </div>
-                    <button class="feedback__button" type="submit" id="email">Отправить</button>
-                </div>
+                    <button class="feedback__button" type="submit" id="submit-button">Отправить</button>
+                </form>
             </div>
         </section>
     </main>
