@@ -411,6 +411,10 @@ button[aria-label]::before {
   content: "";
 }
 
+a[href*="#"] {
+  scroll-margin-top: 50vh;
+}
+
 .icon {
   display: inline-flex;
 }
