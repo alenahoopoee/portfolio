@@ -1670,15 +1670,17 @@ button[aria-label]::before {
   grid-template-areas: "content image";
   gap: 0.625rem;
 }
+@media (width > 63.99875rem) {
+  .portfolio-card:nth-child(2n) {
+    grid-template-areas: "image content";
+    grid-template-columns: 35% auto;
+  }
+}
 @media (width <= 63.99875rem) {
   .portfolio-card {
     display: flex;
     flex-direction: column;
   }
-}
-.portfolio-card:nth-child(2n) {
-  grid-template-areas: "image content";
-  grid-template-columns: 35% auto;
 }
 .portfolio-card__info {
   grid-area: content;
@@ -1716,8 +1718,15 @@ button[aria-label]::before {
   align-items: center;
   gap: 0.625rem;
 }
+@media (width <= 30.06125rem) {
+  .portfolio-card__body {
+    row-gap: 1.25rem;
+    align-items: start;
+    flex-direction: column;
+  }
+}
 .portfolio-card__title {
-  font-family: var(--font-family);
+  font-family: var(--font-family-base);
   color: var(--color-blue);
 }
 .portfolio-card__actions {
@@ -1728,9 +1737,14 @@ button[aria-label]::before {
 .portfolio-card__actions-text {
   display: flex;
   align-items: center;
-  padding: 0.1875rem 1.125rem;
+  padding: 0.625rem 1.125rem;
   border: 0.0625rem solid var(--color-blue);
   border-radius: 2.1875rem;
+}
+@media (width <= 30.06125rem) {
+  .portfolio-card__actions-text {
+    padding-inline: 0.625rem;
+  }
 }
 .portfolio-card__actions-text p {
   font-weight: 600;
