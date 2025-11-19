@@ -63,6 +63,10 @@
                 translate: 100%;
             }
         }
+
+        @include mobile {
+            inset: rem(90) 0 0 0;
+        }
     }
 
     &__menu {
@@ -88,6 +92,11 @@
                 row-gap: 1rem;
                 background-color: var(--color-light-violet);
             }
+
+            @include mobile {
+                padding: rem(20);
+                row-gap: rem(8);
+            }
         }
 
         &-item {
@@ -111,6 +120,10 @@
 
             @include tablet {
                 padding: rem(20) rem(35);
+            }
+
+            @include mobile {
+                padding: rem(10) rem(25);
             }
 
             &.is-active {

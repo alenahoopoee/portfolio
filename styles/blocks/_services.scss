@@ -1,6 +1,8 @@
 @use '../helpers' as *;
 
 .services {
+    scroll-margin-top: rem(130);
+    
     &__inner {
         padding-block: rem(85);
         display: grid;

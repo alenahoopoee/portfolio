@@ -26,7 +26,7 @@
         }
 
         .actions__button-text {
-            font-size: fluid(20, 16);
+            font-size: fluid(20, 14);
         }
 
         .actions__button-text--colored {
@@ -34,10 +34,10 @@
         }
 
         .button {
-            padding: rem(10) rem(32);
+            padding: rem(14) rem(32);
 
             @include mobile-s {
-                padding: rem(10) rem(7);
+                padding-inline: rem(18);
             }
         }
     }
@@ -46,6 +46,10 @@
         position: relative;
         padding: rem(16) rem(32);
         border-radius: rem(60);
+
+        @include mobile {
+            padding: rem(12) rem(16);
+        }
 
         &-text {
             font-weight: 500;
@@ -64,6 +68,14 @@
             padding-right: rem(75);
             background-color: var(--color-blue);
 
+            @include mobile {
+                padding-right: rem(65);
+            }
+
+            @include mobile-s {
+                padding-right: rem(55);
+            }
+
             &::after {
                 content: '';
                 right: rem(20);
@@ -74,6 +86,16 @@
                 background-repeat: no-repeat;
 
                 @include abs-y;
+
+                @include mobile {
+                    width: rem(40);
+                    height: rem(40);
+                }
+
+                @include mobile-s {
+                    width: rem(30);
+                    height: rem(30);
+                }
             }
         }
     }
