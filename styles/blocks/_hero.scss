@@ -88,12 +88,12 @@
 
         @include mobile {
             width: 100%;
-            height: rem(270);
+            height: rem(350);
         }
 
         @include mobile-s {
             width: fluid(450, 370);
-            height: fluid(250, 170);
+            height: fluid(300, 190);
         }
     }
 

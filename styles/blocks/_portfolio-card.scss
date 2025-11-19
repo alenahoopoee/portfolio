@@ -6,6 +6,11 @@
     grid-template-areas: "content image";
     gap: rem(10);
 
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+
     &:nth-child(2n) {
         grid-template-areas: "image content";
         grid-template-columns: (35% auto);
@@ -16,7 +21,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        row-gap: rem(15);
+        row-gap: rem(35);
         padding: rem(30);
         border-radius: rem(35);
         background-color: var(--color-light-violet);
@@ -25,7 +30,8 @@
     &__tags {
         &-list {
             display: flex;
-            column-gap: rem(6);
+            flex-wrap: wrap;
+            gap: rem(6);
         }
 
         &-item {
@@ -34,9 +40,13 @@
             border-radius: rem(50);
 
             p {
-                font-size: rem(18);
+                font-size: fluid(18, 14);
                 font-weight: 500;
                 color: var(--color-blue);
+            }
+
+            @include mobile {
+                padding: rem(6) rem(12);
             }
         }
     }
@@ -94,6 +104,7 @@
     }
 
     &__wrapper-image {
+        justify-items: center;
         grid-area: image;
         padding: rem(30);
         border-radius: rem(35);
