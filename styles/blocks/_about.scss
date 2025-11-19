@@ -2,8 +2,13 @@
 
 .about {
     scroll-margin-top: rem(130);
+    scroll-margin-top: rem(130);
     border-radius: rem(50);
     background-color: var(--color-beige);
+
+    @include tablet {
+        scroll-margin-top: rem(30);
+    }
 
     &__inner {
         padding-block: rem(70);

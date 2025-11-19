@@ -6,6 +6,10 @@
     padding: rem(25);
     background-color: var(--color-blue);
 
+    @include tablet {
+        scroll-margin-top: rem(30);
+    }
+
     &__inner {
         display: flex;
         flex-direction: column;

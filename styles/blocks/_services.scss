@@ -2,6 +2,10 @@
 
 .services {
     scroll-margin-top: rem(130);
+
+    @include tablet {
+        scroll-margin-top: rem(30);
+    }
     
     &__inner {
         padding-block: rem(85);
