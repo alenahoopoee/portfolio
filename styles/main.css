@@ -524,14 +524,15 @@ button[aria-label]::before {
 @media (width <= 63.99875rem) {
   .header__overlay {
     position: fixed;
-    inset: 6.875rem 0 0 0;
+    inset: 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
     row-gap: 3rem;
-    padding: 3rem 1rem 1rem;
+    padding: 8rem 1rem 1rem;
     background-color: var(--color-white);
     transition-duration: var(--transition-duration);
+    z-index: -1;
   }
   .header__overlay:not(.is-active) {
     opacity: 0;
@@ -541,7 +542,7 @@ button[aria-label]::before {
 }
 @media (width <= 47.99875rem) {
   .header__overlay {
-    inset: 5.625rem 0 0 0;
+    padding-top: 7rem;
   }
 }
 .header__menu {
